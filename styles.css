@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #f4f4f4; /* Light text color */
+}
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #1a1a1a; /* Dark container background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Light shadow for visibility */
+}
+h1 {
+    color: #005f05; /* Bright green color to match Neco-Ware theme */
+    text-align: center;
+}
+h2 {
+    color: #005f05; /* Light text color */
+}
+p {
+    margin-bottom: 10px;
+    color: #f4f4f4; /* Light text color */
+}
+.faq {
+    margin-bottom: 20px;
+}
+.faq h2 {
+    cursor: pointer;
+    background-color: #333; /* Darker background for the question */
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.faq h2:hover {
+    background-color: #444; /* Hover effect slightly lighter */
+}
+.faq p {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0;
+    transition: height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+    background-color: #222; /* Dark background for the answer */
+    border-left: 5px solid #005f05; /* Bright green border for answers */
+    padding-left: 10px;
+}
+.faq p.open {
+    height: auto;
+    opacity: 1;
+    padding: 10px;
+}
